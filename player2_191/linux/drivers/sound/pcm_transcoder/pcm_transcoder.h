@@ -6,6 +6,7 @@
  * Header file for the silence generating transformer.
  */
 
+
 #ifndef PCM_TRANSCODER_H_
 #define PCM_TRANSCODER_H_
 
@@ -22,6 +23,7 @@
 #define PCM_TRACE(fmt, args...)         (printk(KERN_NOTICE "%s: " fmt, __FUNCTION__, ##args))
 /* Output errors, should never be output in 'normal' operation */
 #define PCM_ERROR(fmt, args...)         (printk(KERN_CRIT "ERROR in %s: " fmt, __FUNCTION__, ##args))
+
 
 MME_ERROR PcmTranscoder_RegisterTransformer(const char *);
 
