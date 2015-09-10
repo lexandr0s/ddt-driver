@@ -141,7 +141,7 @@ int d6158_read_status(struct dvb_frontend *fe, enum fe_status *status)
 		}
 
 	}
-	printk("bIsLocked = %d\n", bIsLocked);
+//	printk("bIsLocked = %d\n", bIsLocked); //do not spam (lexandros)
 
 	if (bIsLocked)
 	{
