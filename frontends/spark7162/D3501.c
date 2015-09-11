@@ -4473,7 +4473,7 @@ static int d3501_read_snr(struct dvb_frontend* fe, u16* snr)
 	if (*snr > 90)
 		*snr = 90;
 	*snr = *snr * 255 * 255 / 100;
-	printk("*snr = %d\n", *snr);
+//	printk("*snr = %d\n", *snr);
 	return iRet;
 }
 
@@ -4502,7 +4502,7 @@ static int d3501_read_signal_strength(struct dvb_frontend* fe,
 #endif // 0
 	*Intensity = *Intensity * 255 * 255 / 100;
 	*strength = *Intensity;
-	printk("*strength = %d\n", *strength);
+//	printk("*strength = %d\n", *strength);
 	return iRet;
 }
 

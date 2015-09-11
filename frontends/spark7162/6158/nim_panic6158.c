@@ -1184,7 +1184,7 @@ INT32 nim_panic6158_get_SNR(struct nim_device *dev, UINT8 *snr)
 
 	*snr = (UINT8)(sqi / 100);
 
-	NIM_PANIC6158_PRINTF("snr =%d\n", *snr);
+//	NIM_PANIC6158_PRINTF("snr =%d\n", *snr);
 
 	//soc_printf("%d\n", osal_get_tick() - tick);
 
@@ -1543,7 +1543,7 @@ INT32 nim_panic6158_channel_change(struct nim_device *dev, struct NIM_Channel_Ch
 	UINT32 wait_time;
 	UINT8 bw, mode[2], qam;
 	struct nim_panic6158_private *priv;
-	printk("          nim_panic6158_channel_change\n");
+//	printk("          nim_panic6158_channel_change\n");
 
 	priv = (struct nim_panic6158_private *) dev->priv;
 
@@ -1605,7 +1605,7 @@ INT32 nim_panic6158_channel_change(struct nim_device *dev, struct NIM_Channel_Ch
 			priv->if_freq = DMD_E_IF_4500KHZ;
 		else
 			priv->if_freq = DMD_E_IF_5000KHZ;
-		printk("[%s]%d\n", __FUNCTION__, __LINE__);
+//		printk("[%s]%d\n", __FUNCTION__, __LINE__);
 		//nim_panic6158_open(dev);
 		nim_panic6158_set_reg(dev, MN88472_REG_COMMON);
 		//config demo

@@ -212,7 +212,7 @@ int d6158_set_frontend(struct dvb_frontend* fe,
 	struct nim_panic6158_private *priv = dev->priv;
 	//UINT8 lock;
 	state->p = p;
-	printk("-----------------------d6158_set_frontend\n");
+//	printk("-----------------------d6158_set_frontend\n");
 	//nim_panic6158_get_lock(dev,&lock);
 	//if(lock != 1)
 	{
